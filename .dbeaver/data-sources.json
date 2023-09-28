@@ -1,0 +1,99 @@
+{
+	"folders": {},
+	"connections": {
+		"mysql8-18a5ec64e8d-443484bd827f7f8": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "mysql_testuser_1234",
+			"save-password": true,
+			"configuration": {
+				"host": "cbpark68.duckdns.org",
+				"port": "33061",
+				"database": "testdb",
+				"url": "jdbc:mysql://cbpark68.duckdns.org:33061/testdb",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"properties": {
+					"connectTimeout": "20000",
+					"rewriteBatchedStatements": "true",
+					"enabledTLSProtocols": "TLSv1,TLSv1.1,TLSv1.2",
+					"allowPublicKeyRetrieval": "TRUE"
+				},
+				"auth-model": "native"
+			}
+		},
+		"mysql8-18a5f06c09d-4f8db2fa09e99189": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "mysql_root_1234",
+			"save-password": true,
+			"configuration": {
+				"host": "cbpark68.duckdns.org",
+				"port": "33061",
+				"database": "mysql",
+				"url": "jdbc:mysql://cbpark68.duckdns.org:33061/mysql",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"properties": {
+					"connectTimeout": "20000",
+					"rewriteBatchedStatements": "true",
+					"enabledTLSProtocols": "TLSv1,TLSv1.1,TLSv1.2",
+					"allowPublicKeyRetrieval": "TRUE"
+				},
+				"auth-model": "native"
+			}
+		},
+		"oracle_thin-18a7981b3a2-56a914cc3f585f08": {
+			"provider": "oracle",
+			"driver": "oracle_thin",
+			"name": "oracle_system_1234",
+			"save-password": true,
+			"configuration": {
+				"host": "cbpark68.duckdns.org",
+				"port": "15211",
+				"database": "xe",
+				"url": "jdbc:oracle:thin:@//cbpark68.duckdns.org:15211/xe",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-connection-type@": "BASIC",
+					"@dbeaver-sid-service@": "SERVICE"
+				},
+				"auth-model": "oracle_native"
+			}
+		},
+		"oracle_thin-18a7983a134-66b6d39cea7a5110": {
+			"provider": "oracle",
+			"driver": "oracle_thin",
+			"name": "oracle_cbpark68_1234",
+			"save-password": true,
+			"configuration": {
+				"host": "cbpark68.duckdns.org",
+				"port": "15211",
+				"database": "xe",
+				"url": "jdbc:oracle:thin:@//cbpark68.duckdns.org:15211/xe",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-connection-type@": "BASIC",
+					"@dbeaver-sid-service@": "SERVICE"
+				},
+				"auth-model": "oracle_native"
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"smart-commit": false,
+			"smart-commit-recover": false,
+			"auto-close-transactions": true,
+			"close-transactions-period": 1800
+		}
+	}
+}
